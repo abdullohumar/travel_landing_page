@@ -23,7 +23,7 @@ const Nav = ({ openNav }: Props) => {
   },[])
 
   return (
-    <div className={`bg-blue-950 ${navBg ? 'bg-blue-950 shadow-md' : ''} transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>
+    <div className={`${navBg ? 'bg-blue-950 shadow-md' : ''} transition-all duration-200 h-[12vh] z-[1000] fixed w-full`}>
       <div className='flex h-full items-center justify-between w-[90%] lg:w-[80%] mx-auto'>
         {/* Logo */}
         <div className='flex items-center space-x-2'>
@@ -43,7 +43,7 @@ const Nav = ({ openNav }: Props) => {
         </div>
         {/* Button */}
         <div className='flex items-center space-x-4'>
-          <button className='md:px-12 md:py-2.5 px-8 py-2 text-black text-base bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>Book Now</button>
+          <button className='md:px-12 md:py-2.5 px-6 py-2 text-black text-sm bg-white hover:bg-gray-200 transition-all duration-200 rounded-lg'>Book Now</button>
           {/* Burger Menu */}
           <HiBars3BottomRight onClick={openNav} className='w-8 h-8 text-white cursor-pointer lg:hidden'/>
         </div>
